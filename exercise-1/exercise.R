@@ -15,14 +15,14 @@ library(fueleconomy)
 
 # Select the different manufacturers (makes) of the cars in this data set. 
 # Save this vector in a variable
-
+makes <- vehicles$make
 
 # Use the `unique()` function to determine how many different car manufacturers
 # are represented by the data set
-
+number <- length(unique(makes))
 
 # Filter the data set for vehicles manufactured in 1997
-
+Made_in_1997 <- vehicles[vehicles$year == 1997,]
 
 # Arrange the 1997 cars by highway (`hwy`) gas milage
 # Hint: use the `order()` function to get a vector of indices in order by value
